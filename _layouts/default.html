@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="">
+
+    <title>{{ page.title }}</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/main.css">
+
+    <!-- Font Awesome -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    
+  </head>
+
+  <body>
+    <div class="navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img class="logo" src="/images/logo.svg"></a>
+        </div>
+        
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/community">Community</a></li>
+            <li><a href="/about">About</a></li>
+          </ul>
+
+          <div class="visible-md visible-lg round-btn-parent">
+            <a href="/submit">
+              <button type="button" class="btn navbar-btn round-btn">Submit<br>a<br>Project</button>
+            </a>
+            <div class="login-cont"><strong>or</strong><br><a href="#" class="login">Login</a></div>
+          </div>
+
+          <div class="visible-sm">
+            <button type="button" class="btn navbar-btn pill-btn pull-right">Submit</button>
+            <a traget="_blank"><i class="fa fa-sign-in fa-inverse fa-2x login-icon pull-right"></i></a>
+          </div>
+
+        </div> <!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      {{ content }}
+
+    </div><!-- /.container -->
+
+      <footer>
+        <div class="container">
+        Footer Content
+        </div>
+      </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
