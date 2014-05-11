@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="">
+
+    <title>{{page.title}}</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/main.css">
+
+    <!-- Font Awesome -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    
+  </head>
+
+  <body>
+    <!-- NAVIGATION -->
+    <div class="navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img class="logo" src="/images/logo.svg"></a>
+        </div>
+        
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/community">Community</a></li>
+            <li><a href="/about">About</a></li>
+          </ul>
+
+          <div class="pull-right">
+            <a href="/submit"><button type="button" class="btn navbar-btn pill-btn pull-right visible-lg">Submit a project</button></a>
+            <button type="button" class="btn navbar-btn pill-btn pull-right hidden-lg">Submit</button>
+            <a href=""><i class="fa fa-sign-in fa-inverse fa-2x login-icon pull-right"></i></a>
+          </div>
+
+        </div> <!--/.nav-collapse -->
+      </div>
+    </div> <!--/.navbar -->
+    {% if page.is_front %}
+     <!-- FEATURED IMAGE AND INTRO -->
+    <div class="title-parent">
+      <div class="full-width-image-1"></div> <!-- /full-width-image-1 -->
+
+      <div class="container">
+        <div class="text-wrapper row">
+          <div class="title col-md-8">
+            <h1>The future of MARKET STREET is in YOUR HANDS</h1>
+            <p class="subtitle">As part of the City’s official redesign process for Market, the Market Street Prototyping Festival will use a hands-on approach to inspire a shared vision for the street.</p>
+            <button type="button" class="btn pill-btn hidden-lg hidden-md ">Volunteer now!</button>
+          </div>
+          <div class="col-md-4">
+          <div class="visible-md visible-lg round-btn-parent">
+            <button type="button" class="btn navbar-btn round-btn">Volunteer now!</button>
+            <!-- <div class="login-cont"><strong>or</strong><br><a href="#" class="login">Login</a></div> -->
+          </div>
+
+        </div>
+        </div>
+      </div>
+    </div> <!-- /title-parent -->
+    {% endif %}
