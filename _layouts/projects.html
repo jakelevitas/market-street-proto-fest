@@ -20,9 +20,9 @@
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
               <!-- Indicators -->
               <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                {% for i in (1..page.project-gallery.size) %}
+                <li data-target="#carousel-example-generic" data-slide-to="{{ i | minus:1 }}" {% if forloop.first %} class="active" {% endif %}></li>
+                {% endfor %}
               </ol>
               <div class="carousel-inner">
                 {% for item in page.project-gallery %}
