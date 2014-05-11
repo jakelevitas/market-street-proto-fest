@@ -33,7 +33,10 @@ hr {
   font-weight: 500;
   color:#f06798;
 }
-
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
 .page-title {
   text-align: center;
   text-transform: uppercase;
@@ -58,6 +61,7 @@ a.navbar-brand {padding-right: 1em;}
   color:#e6e6e6;
   background-color: #4fc6e0;
 }
+.navbar-collapse {padding:0;}
 .logo {
   width:180px;
   height:40px;
@@ -273,13 +277,45 @@ a.navbar-brand {padding-right: 1em;}
   text-decoration: none;
   padding-bottom: .5em;
 }
-.proj-description { padding-top: .5em; }
+.proj-description { 
+  padding-top: .5em; 
+  padding-bottom: 2em;
+}
 
 .proj-sidebar {
-  background-color: red;
   height: 10px;
   margin-left: 0;
+  padding-left: 5em;
 }
+
+.sidebar-title {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-bottom: 1em;
+  padding-top: 2em;
+}
+
+.sidebar-title:first-child {
+  padding-top: 5.5em;
+}
+
+.proj-section-title {
+  text-align: left;
+  font-size: 2em;
+  text-transform: capitalize;
+  padding-bottom: 2em;
+}
+
+.press {padding: 2em 0;}
+.press-title {text-transform: uppercase;}
+.press-byline {padding-bottom: .5em;}
+.press-date {color: #ccc; display: inline-block;}
+.press-logo img { 
+  padding-left: 5em; 
+  max-width: 20em;
+}
+
 
 
 
@@ -318,7 +354,15 @@ Phones (<768px)
   .navbar { padding-top: 1em; }
   .logo { width:120px; }  
   .project-container { padding: .5em;}
-  
+  .image-description {
+    position: static;
+    margin-top: 1em;
+    margin-bottom: 3em;
+  }
+  .description-container { margin-top:0; }
+  .section-title { padding-top: 1em; }
+  .image-description { padding-right: .5em; padding-left: .5em;}
+  .text-wrapper { top:8em;}
 
 }
 
@@ -335,19 +379,6 @@ Phones (<768px)
 }
 
 @media (max-width: 992px) and (min-width:768px){
-  .image-description {
-    position: static;
-    margin-top: 1em;
-    margin-bottom: 3em;
-  }
-  .description-container { margin-top:0; }
-  .section-title { padding-top: 1em; }
-  .image-description { padding-right: .5em; padding-left: .5em;}
-  .text-wrapper { top:8em;}
 
-}
-
-
-@media (min-width: 992px) {
 
 }

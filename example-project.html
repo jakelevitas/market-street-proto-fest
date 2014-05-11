@@ -74,49 +74,101 @@
 
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
 
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            </div> <!-- /.proj-description -->
+
+            <div id="project-carousel" class="carousel slide" data-ride="carousel">
               <!-- Indicators -->
               <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#project-carousel" data-slide-to="0"></li>
+                <li data-target="#project-carousel" data-slide-to="1"></li>
+                <li data-target="#project-carousel" data-slide-to="2"></li>
               </ol>
 
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
-                <div class="item active">
-                  <img src="images/slide1.jpg">
-                </div>
-                <img src="images/slide2.jpg">
-                  <img src="images/slide3.jpg">
+                <div class="item active"><img src="images/slide1.jpg"></div>
+                <div class="item"><img src="images/slide2.jpg"></div>
+                <div class="item"><img src="images/slide3.jpg"></div>
               </div>
             
+              <!-- Controls -->
+              <a class="left carousel-control" href="#project-carousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span></a>
+              <a class="right carousel-control" href="#project-carousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div> <!-- /.carousel -->
 
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span></a>
-            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span></a>
-          </div> <!-- /.carousel -->
-
-
-  
-
-          </div> <!-- /.proj-description -->
+          
         </div> <!-- /.proj-content -->
-      </div> <!-- /.row -->
-    </div><!-- /.container -->
-
-        <!-- <div class="col-md-4 proj-sidebar"></div> -->
       
+        <div class="col-md-4 proj-sidebar">
+          <div class="sidebar-title">Website</div>
+          <a id="proj-website" href="http://www.streetstage.io">www.streetstage.io</a>
 
-<!--       <div class="row proj-team"></div>
-      <div class="row proj-status"></div>
+          <div class="sidebar-title">Who Launched this?</div>
+          <a href="http://www.denvergov.org">City and County of Denver</a><br>
+          <a href="http://www.sfgov.org">City and County of San Francisco</a><br>
+        </div> <!-- /.proj-sidebar -->
+
+      </div> <!-- /.row -->
+      
+      <hr>
+
+      <div class="row proj-team">
+        <div class="proj-section-title">Team Members</div>
+            <div class="bio col-md-4">
+              <a href="">
+                <div class="bio-pic circular"><img src="images/jason.jpg"></div>
+                Jason Lally
+              </a>
+              <div class="bio-text">
+                Jason is a programmer, developer, and community organizer. He currently works in the SF Mayor’s Office of Civic Innovation.
+              </div>
+            </div>
+            <div class="bio col-md-4">
+              <a href="">
+                <div class="bio-pic circular"><img src="images/jake.jpg"></div>
+                Jake Levitas
+              </a>
+              <div class="bio-text">
+                Jake is a designer and urban tinkerer. He  currently works in the SF Mayor’s Office of Civic Innovation.
+              </div>
+            </div>
+            <div class="bio col-md-4">
+              <a href="">
+                <div class="bio-pic circular"><img src="images/kavi.jpg"></div>
+                Kavi Harshawat
+              </a>
+              <div class="bio-text">
+                Kavi is a user experience researcher and designer and is currently a fellow at Code for America.
+              </div>
+            </div>
+      </div>
+      
+      <hr>
 
       <div class="row proj-press">
-        <div class="col-lg-8 press"></div>
-        <div class="col-lg-4 press-logo"></div>
-      </div> -->
+       <div class="proj-section-title">In the Press</div>
+        
+        <div class="col-sm-8 press">
+          <a class="press-title">Rags to revenue: Creating new startups from textile waste</a><br>
+          <div class="press-byline">GOOD Magazine - <div class="press-date">September 11, 2013</div></div>
+          <div class="press-content">Every year, around 13 million tons of clothes, shoes, sheets, and other textiles end up in U.S. landfills. Your old t-shirt isn’t just taking up space at the dump, it’s also releasing methane—a greenhouse gas 25 times as potent as carbon dioxide. In San Francisco, where the city is on a mission to achieve zero waste by 2020, textiles are still a problem. But the City of San Francisco hopes that citizens can help solve it—while creating new local jobs at the same time.</div>
+        </div>
+        <div class="col-sm-4 press-logo"><img src="images/goodmag.png"></div>
+
+        <div class="col-sm-8 press">
+          <a class="press-title">Rags to revenue: Creating new startups from textile waste</a><br>
+          <div class="press-byline">GOOD Magazine - <div class="press-date">September 11, 2013</div></div>
+          <div class="press-content">Every year, around 13 million tons of clothes, shoes, sheets, and other textiles end up in U.S. landfills. Your old t-shirt isn’t just taking up space at the dump, it’s also releasing methane—a greenhouse gas 25 times as potent as carbon dioxide. In San Francisco, where the city is on a mission to achieve zero waste by 2020, textiles are still a problem. But the City of San Francisco hopes that citizens can help solve it—while creating new local jobs at the same time.</div>
+        </div>
+        <div class="col-sm-4 press-logo"><img src="images/fastco.png"></div>
+      </div>
+    
+    </div><!-- /.container -->  
+
+      
+      
     
 
       <footer>
