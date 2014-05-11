@@ -13,6 +13,7 @@
       
       <div class="proj-description">
         {{ content }}
+      </div>
             <!-- Carousel
         ================================================== -->
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -32,9 +33,72 @@
           <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
           <a class="right carousel-control" href="#carousel-example-generic" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
         </div><!-- /.carousel -->
-      </div> <!-- /.proj-description -->
     </div> <!-- /.proj-content -->
-  </div> <!-- /.row -->
+  <div class="col-md-4 proj-sidebar">
+          <div class="sidebar-title">Website</div>
+          <a id="proj-website" href="http://www.streetstage.io">www.streetstage.io</a>
+
+          <div class="sidebar-title">Who Launched this?</div>
+          {% for item in page.project-launched %}
+          <a href="{{ page.project-launched-urls[forloop.index] }}">{{item}}</a><br/>
+          {% endfor %}
+        </div> <!-- /.proj-sidebar -->
+
+      </div> <!-- /.row -->
+      
+      <hr>
+      <!--todo: replace these with template variables -->
+      <div class="row proj-team">
+        <div class="proj-section-title">Team Members</div>
+            <div class="bio col-md-4">
+              <a href="">
+                <div class="bio-pic circular"><img src="/images/jason.jpg"></div>
+                Jason Lally
+              </a>
+              <div class="bio-text">
+                Jason is a programmer, developer, and community organizer. He currently works in the SF Mayor’s Office of Civic Innovation.
+              </div>
+            </div>
+            <div class="bio col-md-4">
+              <a href="">
+                <div class="bio-pic circular"><img src="/images/jake.jpg"></div>
+                Jake Levitas
+              </a>
+              <div class="bio-text">
+                Jake is a designer and urban tinkerer. He  currently works in the SF Mayor’s Office of Civic Innovation.
+              </div>
+            </div>
+            <div class="bio col-md-4">
+              <a href="">
+                <div class="bio-pic circular"><img src="/images/kavi.jpg"></div>
+                Kavi Harshawat
+              </a>
+              <div class="bio-text">
+                Kavi is a user experience researcher and designer and is currently a fellow at Code for America.
+              </div>
+            </div>
+      </div>
+      
+      <hr>
+
+      <div class="row proj-press">
+       <div class="proj-section-title">In the Press</div>
+        
+        <div class="col-sm-8 press">
+          <a class="press-title">Rags to revenue: Creating new startups from textile waste</a><br>
+          <div class="press-byline">GOOD Magazine - <div class="press-date">September 11, 2013</div></div>
+          <div class="press-content">Every year, around 13 million tons of clothes, shoes, sheets, and other textiles end up in U.S. landfills. Your old t-shirt isn’t just taking up space at the dump, it’s also releasing methane—a greenhouse gas 25 times as potent as carbon dioxide. In San Francisco, where the city is on a mission to achieve zero waste by 2020, textiles are still a problem. But the City of San Francisco hopes that citizens can help solve it—while creating new local jobs at the same time.</div>
+        </div>
+        <div class="col-sm-4 press-logo"><img src="/images/goodmag.png"></div>
+
+        <div class="col-sm-8 press">
+          <a class="press-title">Rags to revenue: Creating new startups from textile waste</a><br>
+          <div class="press-byline">GOOD Magazine - <div class="press-date">September 11, 2013</div></div>
+          <div class="press-content">Every year, around 13 million tons of clothes, shoes, sheets, and other textiles end up in U.S. landfills. Your old t-shirt isn’t just taking up space at the dump, it’s also releasing methane—a greenhouse gas 25 times as potent as carbon dioxide. In San Francisco, where the city is on a mission to achieve zero waste by 2020, textiles are still a problem. But the City of San Francisco hopes that citizens can help solve it—while creating new local jobs at the same time.</div>
+        </div>
+        <div class="col-sm-4 press-logo"><img src="/images/fastco.png"></div>
+      </div>
+
 </div><!-- /.container -->
 <!-- <div class="col-md-4 proj-sidebar"></div> -->
 <!--       <div class="row proj-team"></div>
