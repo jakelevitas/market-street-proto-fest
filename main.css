@@ -4,7 +4,7 @@
 Blue: #4fc6e0;
 Pink: #f06798;
 Grey: #e6e6e6;
-Green: #c1d831;
+Green: #	;
 Box-Shadow: gray;
 
 
@@ -14,7 +14,8 @@ Box-Shadow: gray;
 
 
 /* BASIC STYLE */
-body {color:#666;}
+body {color:#666;font-size:16px;}
+h1 {color:#f06798;}
 .icon-bar { background-color:white; }
 .container {
   padding-left: 10%;
@@ -43,8 +44,11 @@ a:hover {
   padding: 1em 0;
   color:#f06798;
 }
-
-
+.pink-bold {
+  color:#f06798;
+  font-weight:normal;
+  font-size:1.33em;
+}
 
 /* ========== NAVBAR ========== */
 a.navbar-brand {padding-right: 1em;}
