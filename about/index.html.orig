@@ -20,8 +20,12 @@ This feedback will help the City identify the ideas best suited for long-term in
 <div class="row">
   <section id="festival-map">
     <div class="section-title">Festival Map</div>
+<<<<<<< HEAD
    <div class="col-md-12"> <p class="lead">Over three days, the Festival will span nearly two miles of Market Street, divided into five Zones.</p></div>
+    <div class="col-md-12"><img id="festival-map-img" src="/images/festivalmap.png"></div>
+=======
     <div class="col-md-12"><img id="festival-map-img" src="{{ site.baseurl }}/images/festivalmap.png"></div>
+>>>>>>> gh-pages
   </section>
 </div>
 
