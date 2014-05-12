@@ -6,34 +6,18 @@ title: Market Street Prototyping Festival
 <div class="row"><h1 class="page-title">Projects</h1></div>
 
 <div class="row">
+
+	{% for post in site.posts %}
   
   <div class="project-container col-md-4">
     <div class="project">
-      <a href="{{ site.baseurl }}/projects/example-project">
-        <img class="project-img" src="{{ site.baseurl }}/images/project-1.jpg">
-        <div class="project-title">Some Project Title</div>
-        <div class="project-description">Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</div>
+      <a href="{{ post.url }}">
+        <img class="project-img" src="{{ site.baseurl }}/images/projects/{{ post.project-photo }}">
+        <div class="project-title">{{ post.title }}</div>
+        <div class="project-description">{{ post.excerpt | strip_html }}</div>
       </a>
     </div>
   </div>
 
-  <div class="project-container col-md-4">
-    <div class="project">
-      <a href="{{ site.baseurl }}/projects/example-project">
-        <img class="project-img" src="{{ site.baseurl }}/images/project-2.jpg">
-        <div class="project-title">Some Project Title</div>
-        <div class="project-description">Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</div>
-      </a>
-    </div>
-  </div>
-
-  <div class="project-container col-md-4">
-    <div class="project">
-      <a href="{{ site.baseurl }}/projects/example-project">
-        <img class="project-img" src="{{ site.baseurl }}/images/project-3.jpg">
-        <div class="project-title">Some Project Title</div>
-        <div class="project-description">Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</div>
-      </a>
-    </div>
-  </div>
+  {% endfor %}
 </div> <!-- /.row -->

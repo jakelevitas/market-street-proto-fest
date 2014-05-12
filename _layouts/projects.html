@@ -3,18 +3,19 @@
 
 <div class="container">      
   <div class="row">
-    <div class="col-lg-12 proj-header" style="background-image: url(/images/{{ page.project-photo }});"></div>
+    <div class="col-lg-12 proj-header" style="background-image: url({{site.baseurl}}/images/projects/{{ page.project-photo }});"></div>
   </div> <!-- /.row -->
     
   <div class="row">
     <div class="col-md-8 proj-content">
-      <div class="proj-title">{{page.project-title}}</div>
-      by <a href="#team" class="proj-teamname">{{page.project-team}}</a>
+      <div class="proj-title">{{page.title}}</div>
+      <!-- by <a href="#team" class="proj-teamname">{{page.project-team}}</a> -->
       
       <div class="proj-description">
         {{ content }}
       </div>
-            <!-- Carousel
+      {% if page.project-gallery %}
+      <!-- Carousel
         ================================================== -->
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
@@ -33,21 +34,25 @@
           <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
           <a class="right carousel-control" href="#carousel-example-generic" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
         </div><!-- /.carousel -->
+      {% endif %}
     </div> <!-- /.proj-content -->
   <div class="col-md-4 proj-sidebar">
           <div class="sidebar-title">Website</div>
-          <a id="proj-website" href="http://www.streetstage.io">www.streetstage.io</a>
-
+          <a id="proj-website" href="{{page.project-site}}" target="_blank">{{page.project-site}}</a>
+          {% if page.project-launched-links %}
           <div class="sidebar-title">Who Launched this?</div>
-          {% for item in page.project-launched %}
-          <a href="{{ page.project-launched-urls[forloop.index] }}">{{item}}</a><br/>
+          {% for linkhash in page.project-launched-links %}
+          {% for link in linkhash %}
+          <a href="{{ link[1] }}" target="_blank">{{ link[0] }}</a><br/>
           {% endfor %}
+          {% endfor %}
+          {% endif %}
         </div> <!-- /.proj-sidebar -->
 
       </div> <!-- /.row -->
-      
+
       <hr>
-      <!--todo: replace these with template variables -->
+      <!--todo: replace these with template variables
       <div class="row proj-team">
         <div class="proj-section-title">Team Members</div>
             <div class="bio col-md-4">
@@ -98,6 +103,7 @@
         </div>
         <div class="col-sm-4 press-logo"><img src="{{ site.baseurl }}/images/fastco.png"></div>
       </div>
+    -->
 
 </div><!-- /.container -->
 <!-- <div class="col-md-4 proj-sidebar"></div> -->
