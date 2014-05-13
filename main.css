@@ -423,15 +423,11 @@ Phones (<768px)
     padding-bottom: 2em;
   }
   .navbar-nav { margin:0; }
-  .navbar-btn   {
-    margin-top: .5em !important;
-    margin-right: 2%;
-    float:right;
-  }
   .image-description {
     margin:1em 0;
     text-align: center;
   }
+  .navbar-btn.pill-btn {margin-left: 1em; }
 
 }
 
