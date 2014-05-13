@@ -71,6 +71,26 @@ a.navbar-brand {padding-right: 1em;}
   height:40px;
 }
 
+/* ========== REGULAR CIRCLE BUTTON ========== */ 
+.circle-btn {
+  width:10em;
+  height:10em;
+  line-height:1.3em;
+  border: .3em solid #fff;
+  border-radius: 50%;
+  color:#fff;
+  text-align:center;
+  text-decoration:none;
+  background: #f06798;
+  font-size:1.2em;
+  font-weight:bold;
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:1em;
+  margin-bottom:1em;
+  box-shadow: 0 0 3px gray;
+}
 
 /* ========== SUBMIT BUTTON ========== */
 .round-btn-parent { position:relative; }
