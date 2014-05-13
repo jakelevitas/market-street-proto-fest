@@ -106,7 +106,7 @@ a.navbar-brand {padding-right: 1em;}
   text-decoration:none;
   background: #f06798;
   font-size:1.2em;
-  font-weight:bold;
+  font-weight:normal;
   position:absolute;
   left:2em;
   top:-3em;
@@ -151,12 +151,12 @@ a.navbar-brand {padding-right: 1em;}
 /* ========== FULLBLEED IMAGE AND INTRO TEXT  ========== */
 .title-parent {position: relative; }
 .full-width-image-1 {
-  background: url('images/test-bg.jpg') no-repeat center center;
+  background: #000000 url('images/bg-1.jpg') no-repeat center center;
   background-size: cover;
   padding: 100px 0;
   margin-bottom: 2.5em;
   min-height: 30em;
-  /*opacity: .7;*/
+  opacity: .9;
 
 }
 .text-wrapper { 
@@ -166,7 +166,7 @@ a.navbar-brand {padding-right: 1em;}
 }
 .title { 
   color:white;
-  text-shadow:1px 0 1px gray;
+  text-shadow:3px 3px 3px #222;
   padding:0;
   width: ;
 }
