@@ -94,7 +94,7 @@ a.navbar-brand {padding-right: 1em;}
 
 /* ========== SUBMIT BUTTON ========== */
 .round-btn-parent { position:relative; }
-.round-btn:hover { color:#e6e6e6; }
+.round-btn:hover { color:#e6e6e6; box-shadow: none;}
 .round-btn {
   width:10em;
   height:10em;
@@ -387,13 +387,36 @@ Phones (<768px)
   .section-title { padding-top: 1em; }
   .image-description { padding-right: .5em; padding-left: .5em;}
   .text-wrapper { top:8em;}
+  .round-btn {
+  margin: auto;
+  position: absolute;
+  top: 14em; left: 0; bottom: 0; right: 0;
+  }
+  .full-width-image-1 {
+    margin-bottom: 6em;
+  }
+  .title {min-height: 10em;}
 
 }
 
 @media (max-width: 768px) {
   .navbar-brand {padding-top:.2em;}
   .image-description {position: static;}
-  .text-wrapper { top:4em; }
+  .text-wrapper { 
+    top:4em; 
+    min-height: 50em;}
+  /*.round-btm-parent {display: block !important;}*/
+  .title {min-height: 15em;}
+  .round-btn {
+    margin: auto;
+    position: absolute;
+    top: 14em; left: 0; bottom: 0; right: 0;
+  }
+  .full-width-image-1 {
+    margin-bottom: 6em;
+  }
+
+
 
 }
 
