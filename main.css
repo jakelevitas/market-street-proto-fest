@@ -213,7 +213,7 @@ a.navbar-brand {padding-right: 1em;}
 .sponsor {
   max-height: 80px;
   width:auto;
-  margin-bottom: 4em;
+  max-width: 80%;
 }
 
 
@@ -369,7 +369,7 @@ Tablets (≥768px)
 Phones (<768px)
 */
 
-@media (max-width: 992px) and (min-width:768px){
+@media (max-width: 991px) and (min-width:768px){
   .navbar-nav>li>a {
     padding-left:.6em;
     padding-right:.6em;
@@ -390,16 +390,42 @@ Phones (<768px)
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navbar-brand {padding-top:.2em;}
   .image-description {position: static;}
-  .text-wrapper { top:4em; }
+  .text-wrapper { 
+    top:4em; 
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-right: 0;
+  }
+  .container {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .sponsor {
+    max-width: 80%;
+    margin-bottom: 2em;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .navbar-nav { margin:0; }
+  .navbar-btn   {
+    margin-top: .5em !important;
+    margin-right: 2%;
+    float:right;
+  }
+  .image-description {
+    margin:1em 0;
+    text-align: center;
+  }
 
 }
 
 @media (max-width: 1200px) and (min-width:992px){
   .image-description {margin-top: 30px;}
   .project-container { padding: .5em;}
+
 }
 
 @media (max-width: 992px) and (min-width:768px){
