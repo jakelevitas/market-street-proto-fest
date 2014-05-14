@@ -85,4 +85,18 @@
         </div>
       </div>
     </div> <!-- /title-parent -->
+    {% elsif page.image %}
+     <!-- FEATURED IMAGE AND INTRO -->
+    <div class="title-parent">
+      <div class="full-width-image-1" style="background: #000000 url('{{ site.baseurl }}/images/{{ page.image }}') no-repeat center center;"></div> <!-- /full-width-image-1 -->
+
+      <div class="container">
+        <div class="text-wrapper row">
+          <div class="title col-md-8">
+            <h1>{{ page.lead }}</h1>
+          </div>
+        </div>
+      </div>
+    </div> <!-- /title-parent -->
+
     {% endif %}
