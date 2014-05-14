@@ -4,7 +4,7 @@
 Blue: #4fc6e0;
 Pink: #f06798;
 Grey: #e6e6e6;
-Green: #	;
+Green: #c1d831;
 Box-Shadow: gray;
 
 
@@ -206,8 +206,71 @@ a.navbar-brand {padding-right: 1em;}
   margin-left: auto;
   width:100%;
   max-height: 100em;
-
 }
+
+.timeline-rnd {
+  width:7em;
+  height:7em;
+  line-height:1.8em;
+  border: .1em solid #fff;
+  border-radius: 50%;
+  color:#fff;
+  text-align:center;
+  text-decoration:none;
+  background: #f06798;
+  font-size:1em;
+  margin-left:auto;
+  margin-right:auto;
+  box-shadow: 0 0 3px gray;
+  font-weight: 200;
+  padding-top: 1.6em;
+}
+
+.timeline-label {
+  padding-top: 2.4em;
+}
+.timeline-descr {
+  color:#666;
+  background-color: white;
+  padding: .2em 0;
+  text-align: center;
+  line-height: 1.2em;
+  font-size: .9em;
+  font-weight: normal;
+  margin-top: 2.5em;
+  text-transform: uppercase;
+  z-index: -1;
+}
+.timeline-ln-parent{
+  position: relative;
+}
+.timeline-vln {
+  width: .5em;
+  height: 55em;
+  background-color: #c1d831;
+  z-index: -1;
+  margin: auto;
+  position: absolute;
+  top: 55em; 
+  left: 0; 
+  bottom: 0; 
+  right: 0;
+}
+.timeline-hln {
+  width: 55em;
+  height: .5em;
+  background-color: #c1d831;
+  z-index: -1;
+  margin: auto;
+  position: absolute;
+  top: 7em;
+  left: 0em;
+  bottom: 0;
+  right: 0;
+}
+.timeline-grey { background-color: #717268}
+.timeline-day {font-size: 1.2em; font-weight: 700;}
+
 
 /* ========== SPONSORS  ========== */
 .sponsor {
@@ -396,6 +459,8 @@ Phones (<768px)
     margin-bottom: 6em;
   }
   .title {min-height: 10em;}
+  .timeline-rnd { margin-bottom: 4.5em;}
+  .timeline-label { margin-bottom: 2em;}
 
 }
 
@@ -412,9 +477,9 @@ Phones (<768px)
     position: absolute;
     top: 14em; left: 0; bottom: 0; right: 0;
   }
-  .full-width-image-1 {
-    margin-bottom: 6em;
-  }
+  .full-width-image-1 { margin-bottom: 6em; }
+  .timeline-rnd { margin-bottom: 4.5em;}
+  .timeline-label { margin-bottom: 2em;}
 
 
 
@@ -423,6 +488,7 @@ Phones (<768px)
 @media (max-width: 1200px) and (min-width:992px){
   .image-description {margin-top: 30px;}
   .project-container { padding: .5em;}
+  .timeline-hln {width: 45em;}
 }
 
 @media (max-width: 992px) and (min-width:768px){
