@@ -34,6 +34,13 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="{{ site.baseurl }}/"><img class="logo" src="{{ site.baseurl }}/images/logo.svg"></a>
+
+          <!-- SUBMIT BUTTON ON MOBILE -->
+          <div class="visible-xs">
+            <a href="{{ site.baseurl }}/opencall"><button type="button" class="btn navbar-btn pill-btn pull-right visible-lg">Submit a project</button></a>
+            <button type="button" class="btn navbar-btn pill-btn">Submit a project</button>
+          </div>
+
         </div>
         
         <div class="collapse navbar-collapse">
@@ -47,9 +54,10 @@
           </ul>
 
           <div class="pull-right">
-            <a href="{{ site.baseurl }}/opencall"><button type="button" class="btn navbar-btn pill-btn pull-right visible-lg">Submit a project</button></a>
-            <button type="button" class="btn navbar-btn pill-btn pull-right hidden-lg">Submit</button>
-            <a href=""><i class="fa fa-sign-in fa-inverse fa-2x login-icon pull-right"></i></a>
+            <a href="{{ site.baseurl }}/opencall">
+              <button type="button" class="btn navbar-btn pill-btn pull-right visible-lg visible-md">Submit a project</button></a>
+            <button type="button" class="btn navbar-btn pill-btn pull-right hidden-lg hidden-md">Submit</button>
+            <!-- <a href=""><i class="fa fa-sign-in fa-inverse fa-2x login-icon pull-right"></i></a> -->
           </div>
 
         </div> <!--/.nav-collapse -->
@@ -78,4 +86,18 @@
         </div>
       </div>
     </div> <!-- /title-parent -->
+    {% elsif page.image %}
+     <!-- FEATURED IMAGE AND INTRO -->
+    <div class="title-parent">
+      <div class="full-width-image-1" style="background: #000000 url('{{ site.baseurl }}/images/{{ page.image }}') no-repeat center center; background-size: cover;"></div> <!-- /full-width-image-1 -->
+
+      <div class="container">
+        <div class="text-wrapper row">
+          <div class="title col-md-8">
+            <h1>{{ page.lead }}</h1>
+          </div>
+        </div>
+      </div>
+    </div> <!-- /title-parent -->
+
     {% endif %}
