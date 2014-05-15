@@ -65,39 +65,43 @@
     {% if page.is_front %}
      <!-- FEATURED IMAGE AND INTRO -->
     <div class="title-parent">
-      <div class="full-width-image-1"></div> <!-- /full-width-image-1 -->
+      <div class="full-width-image-1">
 
-      <div class="container">
-        <div class="text-wrapper row">
-          <div class="title col-md-8">
-            <h1>The future of MARKET STREET is in YOUR HANDS</h1>
-            <p class="subtitle">As part of the City’s official redesign process for Market, the Market Street Prototyping Festival will use a hands-on approach to inspire a shared vision for the street.</p>
-            <h1 style="text-align:left"><a href="{{ site.baseurl }}/about">Festival</a> // October 2-4, 2014</h1>
-            <h1 style="text-align:left"><a href="{{ site.baseurl }}/opencall">Proposals Due</a> // June 27, 2014</h1>
-            <a href="{{ site.baseurl }}/about"><button type="button" class="btn pill-btn hidden-lg hidden-md ">Learn more</button></a>
+        <div class="container">
+          <div class="text-wrapper row">
+            
+            <div class="title col-md-8">
+              <h1>The future of MARKET STREET is in YOUR HANDS</h1>
+              <p class="subtitle">As part of the City’s official redesign process for Market, the Market Street Prototyping Festival will use a hands-on approach to inspire a shared vision for the street.</p>
+              <h1 style="text-align:left"><a href="{{ site.baseurl }}/about">Festival</a> // October 2-4, 2014</h1>
+              <h1 style="text-align:left"><a href="{{ site.baseurl }}/opencall">Proposals Due</a> // June 27, 2014</h1>
+              <a href="{{ site.baseurl }}/about"><button type="button" class="btn pill-btn hidden-lg hidden-md ">Learn more</button></a>
+            </div>
+            
+            <div class="col-md-4">
+              <div class="visible-md visible-lg round-btn-parent">
+                <a href="{{ site.baseurl }}/about"><button type="button" class="btn navbar-btn round-btn">Learn more</button></a>
+                <!-- <div class="login-cont"><strong>or</strong><br><a href="#" class="login">Login</a></div> -->
+              </div>
+            </div>
           </div>
-          <div class="col-md-4">
-          <div class="visible-md visible-lg round-btn-parent">
-            <a href="{{ site.baseurl }}/about"><button type="button" class="btn navbar-btn round-btn">Learn more</button></a>
-            <!-- <div class="login-cont"><strong>or</strong><br><a href="#" class="login">Login</a></div> -->
-          </div>
-
-        </div>
-        </div>
-      </div>
+        </div> 
+      </div><!-- /full-width-image-1 -->
     </div> <!-- /title-parent -->
+
     {% elsif page.image %}
      <!-- FEATURED IMAGE AND INTRO -->
     <div class="title-parent">
-      <div class="full-width-image-1" style="background: #000000 url('{{ site.baseurl }}/images/{{ page.image }}') no-repeat center center; background-size: cover;"></div> <!-- /full-width-image-1 -->
+      <div class="full-width-image-1" style="background: #000000 url('{{ site.baseurl }}/images/{{ page.image }}') no-repeat center center; background-size: cover;">
 
-      <div class="container">
-        <div class="text-wrapper row">
-          <div class="title col-md-8">
-            <h1>{{ page.lead }}</h1>
+        <div class="container">
+          <div class="text-wrapper row">
+            <div class="title col-md-8">
+              <h1>{{ page.lead }}</h1>
+            </div>
           </div>
         </div>
-      </div>
+      </div> <!-- /full-width-image-1 -->
     </div> <!-- /title-parent -->
 
     {% endif %}

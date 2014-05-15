@@ -30,7 +30,6 @@ hr {
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 2em;
-  padding-top: 2.5em;
   font-size: 2em;
   font-weight: 500;
   color:#f06798;
@@ -162,16 +161,11 @@ a.navbar-brand {padding-right: 1em;}
 .full-width-image-1 {
   background: #000000 url('images/bg-7.jpg') no-repeat center center;
   background-size: cover;
-  padding: 100px 0;
+  padding: 3em 0;
   margin-bottom: 2.5em;
-  min-height: 25em;
+  min-height: 18em;
   opacity: 1;
 
-}
-.text-wrapper { 
-  position: absolute;  
-  top: 5em;
-  margin-right: 10%;
 }
 .title { 
   color:white;
@@ -470,9 +464,7 @@ Phones (<768px)
     margin-bottom: 3em;
   }
   .description-container { margin-top:0; }
-  .section-title { padding-top: 1em; }
   .image-description { padding-right: .5em; padding-left: .5em;}
-  .text-wrapper { top:3em;}
   .timeline-rnd { font-size: 1.6em;
     margin-bottom: 0;}
   .timeline-descr {
@@ -490,10 +482,9 @@ Phones (<768px)
   .navbar-brand {padding-top:.2em;}
   .image-description {position: static;}
   .text-wrapper { 
-    top:0em; 
     padding-left: 5%;
     padding-right: 5%;
-    margin-right: 0;
+
   }
   .container {
     padding-left: 4%;
