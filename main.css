@@ -159,10 +159,9 @@ a.navbar-brand {padding-right: 1em;}
 
 /* ========== FULLBLEED IMAGE AND INTRO TEXT  ========== */
 .title-parent {position: relative; }
-.full-width-image-1 {
+.jumbotron {
   background: #000000 url('images/bg-7.jpg') no-repeat center center;
   background-size: cover;
-  padding: 100px 0;
   margin-bottom: 2.5em;
   min-height: 25em;
   opacity: 1;
@@ -177,7 +176,10 @@ a.navbar-brand {padding-right: 1em;}
   color:white;
   text-shadow:2px 2px 2px #444;
   padding:0;
-
+}
+.title .container {
+  padding-bottom: 3em;
+  padding-top: 3em;
 }
 .title h1 { font-size: 1.8em; color:white;}
 .subtitle { font-size: 1.2em; }
@@ -471,7 +473,7 @@ Phones (<768px)
   .description-container { margin-top:0; }
   .section-title { padding-top: 1em; }
   .image-description { padding-right: .5em; padding-left: .5em;}
-  .text-wrapper { top:3em;}
+  /*.text-wrapper { top:1em;}*/
   .timeline-rnd { font-size: 1.6em;
     margin-bottom: 0;}
   .timeline-descr {
@@ -488,12 +490,12 @@ Phones (<768px)
 @media (max-width: 767px) {
   .navbar-brand {padding-top:.2em;}
   .image-description {position: static;}
-  .text-wrapper { 
+  /*.text-wrapper { 
     top:0em; 
     padding-left: 5%;
     padding-right: 5%;
     margin-right: 0;
-  }
+  }*/
   .container {
     padding-left: 4%;
     padding-right: 4%;
@@ -521,6 +523,7 @@ Phones (<768px)
     font-size: 1.5em;
   }
   .timeline-label { margin-bottom: 2.5em;}
+  /*.full-width-image-1 { min-height: 32em;}*/
 
 }
 
