@@ -244,14 +244,14 @@ a.navbar-brand {padding-right: 1em;}
 .timeline-descr {
   color:#666;
   background-color: white;
-  padding: .2em 0;
+  padding: 1em 0;
   text-align: center;
   line-height: 1.2em;
   font-size: .9em;
   font-weight: normal;
-  margin-top: 2.5em;
   text-transform: uppercase;
   z-index: -1;
+
 }
 .timeline-ln-parent{
   position: relative;
@@ -461,9 +461,16 @@ Phones (<768px)
   .section-title { padding-top: 1em; }
   .image-description { padding-right: .5em; padding-left: .5em;}
   .text-wrapper { top:3em;}
-  .timeline-rnd { margin-bottom: 4.5em;}
-  .timeline-label { margin-bottom: 2em;}
-  .timeline-rnd { font-size: 1.6em;}
+  .timeline-rnd { font-size: 1.6em;
+    margin-bottom: 0;}
+  .timeline-descr {
+    margin-top:0;
+    position:relative;
+    padding: 1em 0;
+    margin-bottom: 2em; 
+    font-size: 1.5em;
+  }
+  .timeline-label { margin-bottom: 2.5em;}
 
 }
 
@@ -493,12 +500,16 @@ Phones (<768px)
     text-align: center;
   }
   .navbar-btn.pill-btn {margin-left: 1em; }
-  .timeline-rnd { margin-bottom: 4.5em;}
-  .timeline-label { margin-bottom: 2em;}
-  .timeline-rnd { font-size: 1.6em;}
+  .timeline-rnd { font-size: 1.6em;
+    margin-bottom: 0;}
   .timeline-descr {
-  padding: .5em 0;
-    margin-top: 2em;}
+    margin-top:0;
+    position:relative;
+    padding: 1em 0;
+    margin-bottom: 2em; 
+    font-size: 1.5em;
+  }
+  .timeline-label { margin-bottom: 2.5em;}
 
 }
 
