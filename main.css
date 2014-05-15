@@ -225,8 +225,70 @@ a.navbar-brand {padding-right: 1em;}
   margin-left: auto;
   width:100%;
   max-height: 100em;
+}
+
+.timeline-rnd {
+  width:7em;
+  height:7em;
+  line-height:1.8em;
+  border: .1em solid #fff;
+  border-radius: 50%;
+  color:#fff;
+  text-align:center;
+  text-decoration:none;
+  background: #f06798;
+  font-size:1em;
+  margin-left:auto;
+  margin-right:auto;
+  box-shadow: 0 0 3px gray;
+  font-weight: 200;
+  padding-top: 1.6em;
+}
+
+.timeline-label {
+  padding-top: 2.4em;
+}
+.timeline-descr {
+  color:#666;
+  background-color: white;
+  padding: 1em 0;
+  text-align: center;
+  line-height: 1.2em;
+  font-size: .9em;
+  font-weight: normal;
+  text-transform: uppercase;
+  z-index: -1;
 
 }
+.timeline-ln-parent{
+  position: relative;
+}
+.timeline-vln {
+  width: .5em;
+  height: 95em;
+  background-color: #c1d831;
+  z-index: -1;
+  margin: auto;
+  position: absolute;
+  top: 95em; 
+  left: 0; 
+  bottom: 0; 
+  right: 0;
+}
+.timeline-hln {
+  width: 55em;
+  height: .5em;
+  background-color: #c1d831;
+  z-index: -1;
+  margin: auto;
+  position: absolute;
+  top: 7em;
+  left: 0em;
+  bottom: 0;
+  right: 0;
+}
+.timeline-grey { background-color: #717268}
+.timeline-day {font-size: 1.2em; font-weight: 700;}
 
 /* ========== SPONSORS  ========== */
 .sponsor {
@@ -406,6 +468,16 @@ Phones (<768px)
   .section-title { padding-top: 1em; }
   .image-description { padding-right: .5em; padding-left: .5em;}
   .text-wrapper { top:3em;}
+  .timeline-rnd { font-size: 1.6em;
+    margin-bottom: 0;}
+  .timeline-descr {
+    margin-top:0;
+    position:relative;
+    padding: 1em 0;
+    margin-bottom: 2em; 
+    font-size: 1.5em;
+  }
+  .timeline-label { margin-bottom: 2.5em;}
 
 }
 
@@ -435,12 +507,23 @@ Phones (<768px)
     text-align: center;
   }
   .navbar-btn.pill-btn {margin-left: 1em; }
+  .timeline-rnd { font-size: 1.6em;
+    margin-bottom: 0;}
+  .timeline-descr {
+    margin-top:0;
+    position:relative;
+    padding: 1em 0;
+    margin-bottom: 2em; 
+    font-size: 1.5em;
+  }
+  .timeline-label { margin-bottom: 2.5em;}
 
 }
 
 @media (max-width: 1200px) and (min-width:992px){
   .image-description {margin-top: 30px;}
   .project-container { padding: .5em;}
+  .timeline-hln {width: 45em;}
 
 }
 

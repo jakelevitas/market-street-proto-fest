@@ -45,11 +45,8 @@
           </ul>
 
           <div class="pull-right">
-<<<<<<< HEAD
             <a href="/opencall"><button type="button" class="btn navbar-btn pill-btn pull-right visible-lg">Submit a project</button></a>
-=======
-            <a href="{{ site.baseurl }}/submit"><button type="button" class="btn navbar-btn pill-btn pull-right visible-lg">Submit a project</button></a>
->>>>>>> gh-pages
+
             <button type="button" class="btn navbar-btn pill-btn pull-right hidden-lg">Submit</button>
             <a href=""><i class="fa fa-sign-in fa-inverse fa-2x login-icon pull-right"></i></a>
           </div>
