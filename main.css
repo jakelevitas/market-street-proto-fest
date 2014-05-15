@@ -143,6 +143,10 @@ a.navbar-brand {padding-right: 1em;}
   margin-top: 1.2em;
   box-shadow: 0 0 3px #666;
 }
+
+.pill-btn { 
+  box-shadow: 0 0 3px #000; }
+
 .navbar-btn.pill-btn:hover, .pill-btn:hover {
   background-color: #f06798;
   color:white;
