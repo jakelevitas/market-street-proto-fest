@@ -34,6 +34,12 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="{{ site.baseurl }}/"><img class="logo" src="{{ site.baseurl }}/images/logo.svg"></a>
+
+          <!-- SUBMIT BUTTON ON MOBILE -->
+<!--           <div class="visible-xs">
+            <a href="{{ site.baseurl }}/opencall"><button type="button" class="btn navbar-btn pill-btn pull-right visible-lg">Submit a project</button></a>
+          </div> -->
+
         </div>
         
         <div class="collapse navbar-collapse">
@@ -46,10 +52,12 @@
             <li><a href="{{ site.baseurl }}/getinvolved">Get Involved</a></li>
           </ul>
 
-          <div class="pull-right">
-            <a href="{{ site.baseurl }}/opencall"><button type="button" class="btn navbar-btn pill-btn pull-right visible-lg">Submit a project</button></a>
-            <button type="button" class="btn navbar-btn pill-btn pull-right hidden-lg">Submit</button>
-            <a href=""><i class="fa fa-sign-in fa-inverse fa-2x login-icon pull-right"></i></a>
+          <div>
+            <a href="{{ site.baseurl }}/opencall">
+              <button type="button" class="btn navbar-btn pill-btn pull-right visible-lg visible-md">Submit a project</button></a>
+            <button type="button" class="btn navbar-btn pill-btn pull-right hidden-lg hidden-md hidden-xs">Submit</button>
+            <button type="button" class="btn navbar-btn pill-btn visible-xs">Submit a project</button>
+            <!-- <a href=""><i class="fa fa-sign-in fa-inverse fa-2x login-icon pull-right"></i></a> -->
           </div>
 
         </div> <!--/.nav-collapse -->
@@ -65,12 +73,12 @@
           <div class="title col-md-8">
             <h1>The future of MARKET STREET is in YOUR HANDS</h1>
             <p class="subtitle">As part of the City’s official redesign process for Market, the Market Street Prototyping Festival will use a hands-on approach to inspire a shared vision for the street.</p>
-            <br><br><h1 style="text-align:left">October 2-4, 2014</h1>
-            <a href="{{ site.baseurl }}/about"><button type="button" class="btn pill-btn hidden-lg hidden-md ">Learn More</button></a>
+            <h1 style="text-align:left">October 2-4, 2014</h1>
+            <a href="{{ site.baseurl }}/about"><button type="button" class="btn pill-btn hidden-lg hidden-md ">Learn more</button></a>
           </div>
           <div class="col-md-4">
           <div class="visible-md visible-lg round-btn-parent">
-            <a href="{{ site.baseurl }}/about"><button type="button" class="btn navbar-btn round-btn">Learn More</button></a>
+            <a href="{{ site.baseurl }}/about"><button type="button" class="btn navbar-btn round-btn">Learn more</button></a>
             <!-- <div class="login-cont"><strong>or</strong><br><a href="#" class="login">Login</a></div> -->
           </div>
 
@@ -78,4 +86,18 @@
         </div>
       </div>
     </div> <!-- /title-parent -->
+    {% elsif page.image %}
+     <!-- FEATURED IMAGE AND INTRO -->
+    <div class="title-parent">
+      <div class="full-width-image-1" style="background: #000000 url('{{ site.baseurl }}/images/{{ page.image }}') no-repeat center center; background-size: cover;"></div> <!-- /full-width-image-1 -->
+
+      <div class="container">
+        <div class="text-wrapper row">
+          <div class="title col-md-8">
+            <h1>{{ page.lead }}</h1>
+          </div>
+        </div>
+      </div>
+    </div> <!-- /title-parent -->
+
     {% endif %}

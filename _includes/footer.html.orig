@@ -1,0 +1,26 @@
+ <footer>
+<<<<<<< HEAD
+        <div class="container">
+        	<a href="http://www.sf-planning.org" class="col-sm-4"><img class="sponsor" src="{{ site.baseurl }}/images/sponsor-sfplanning.svg"></a>
+					<a href="http://www.ybca.org" class="col-sm-4"><img class="sponsor" src="{{ site.baseurl }}/images/sponsor-ybca.svg"></a>
+					<a href="http://www.knightfoundation.org" class="col-sm-4"><img class="sponsor" src="{{ site.baseurl }}/images/sponsor-knight.svg"></a>
+=======
+        <div class="container text-center">
+        	<a href="http://www.sf-planning.org" class="col-sm-3"><img class="sponsor" src="{{ site.baseurl }}/images/sponsor-sfplanning.svg"></a>
+			<a href="http://www.ybca.org" class="col-sm-3"><img class="sponsor" src="{{ site.baseurl }}/images/sponsor-ybca.svg"></a>
+			<a href="http://www.sfdpw.org" class="col-sm-3"><img class="sponsor" src="{{ site.baseurl }}/images/sponsor-sfdpw.svg"></a>
+			<a href="http://www.knightfoundation.org" class="col-sm-3"><img class="sponsor" src="{{ site.baseurl }}/images/sponsor-knight.svg"></a>
+>>>>>>> gh-pages
+        </div>
+ </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

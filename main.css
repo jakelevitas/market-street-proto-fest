@@ -4,7 +4,7 @@
 Blue: #4fc6e0;
 Pink: #f06798;
 Grey: #e6e6e6;
-Green: #	;
+Green: #c1d831	;
 Box-Shadow: gray;
 
 
@@ -71,10 +71,30 @@ a.navbar-brand {padding-right: 1em;}
   height:40px;
 }
 
+/* ========== REGULAR CIRCLE BUTTON ========== */ 
+.circle-btn {
+  width:10em;
+  height:10em;
+  line-height:1.3em;
+  border: .3em solid #fff;
+  border-radius: 50%;
+  color:#fff;
+  text-align:center;
+  text-decoration:none;
+  background: #f06798;
+  font-size:1.2em;
+  font-weight:bold;
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:1em;
+  margin-bottom:1em;
+  box-shadow: 0 0 3px gray;
+}
 
 /* ========== SUBMIT BUTTON ========== */
 .round-btn-parent { position:relative; }
-.round-btn:hover { color:#e6e6e6; }
+.round-btn:hover { color:#e6e6e6; box-shadow: none;}
 .round-btn {
   width:10em;
   height:10em;
@@ -89,8 +109,8 @@ a.navbar-brand {padding-right: 1em;}
   font-weight:normal;
   position:absolute;
   left:2em;
-  top:-3em;
-  box-shadow: 0 0 3px gray;
+  top:0em;
+  box-shadow: 0 0 3px #666;
 }
 .login-cont {
   text-align: center;
@@ -112,7 +132,7 @@ a.navbar-brand {padding-right: 1em;}
   background-color: #f06798;
   color:white;
   margin-top: 1.2em;
-  box-shadow: 0 0 3px gray;
+  box-shadow: 0 0 3px #666;
 }
 .navbar-btn.pill-btn:hover, .pill-btn:hover {
   background-color: #f06798;
@@ -131,31 +151,44 @@ a.navbar-brand {padding-right: 1em;}
 /* ========== FULLBLEED IMAGE AND INTRO TEXT  ========== */
 .title-parent {position: relative; }
 .full-width-image-1 {
-  background: #000000 url('images/bg-1.jpg') no-repeat center center;
+  background: #000000 url('images/bg-7.jpg') no-repeat center center;
   background-size: cover;
   padding: 100px 0;
   margin-bottom: 2.5em;
-  min-height: 30em;
-  opacity: .9;
+  min-height: 25em;
+  opacity: 1;
 
 }
 .text-wrapper { 
   position: absolute;  
-  top: 10em;
+  top: 5em;
   margin-right: 10%;
 }
 .title { 
   color:white;
-  text-shadow:3px 3px 3px #222;
+  text-shadow:2px 2px 2px #444;
   padding:0;
-  width: ;
+
 }
 .title h1 { font-size: 1.8em; color:white;}
 .subtitle { font-size: 1.2em; }
 
 
+/* ========== SUBMIT BUTTON ========== */
+.featured {text-align: center;}
+.featured h2 {font-weight: 700; font-size: 2em; color:#c1d831;}
+.featured h4 {
+  font-weight: 100; 
+  font-size: 2em; 
+  padding-bottom: .5em;
+  }
+
+.feature-callout, .feature-description { text-align: center; }
+.feature-description { padding-bottom: 2em;}
+
+
 /* ========== FESTIVAL DETAILS  ========== */
-.description-container { 
+/*.description-container { 
   position:relative; 
   margin-top: 1.5em;
 }
@@ -168,13 +201,12 @@ a.navbar-brand {padding-right: 1em;}
   width: 100%;
   border: 1px solid #ccc;
   box-shadow: 0 0 3px gray;
-}
+}*/
 
 
 /* ========== MAP  ========== */
 #festival-map-img {
-  margin-right: auto;
-  margin-left: auto;
+  margin: 2em auto;
   border:1px solid #ccc;
   width:100%;
   box-shadow: 0 0 3px gray;
@@ -193,7 +225,7 @@ a.navbar-brand {padding-right: 1em;}
 .sponsor {
   max-height: 80px;
   width:auto;
-  margin-bottom: 4em;
+  max-width: 80%;
 }
 
 
@@ -349,7 +381,7 @@ Tablets (≥768px)
 Phones (<768px)
 */
 
-@media (max-width: 992px) and (min-width:768px){
+@media (max-width: 991px) and (min-width:768px){
   .navbar-nav>li>a {
     padding-left:.6em;
     padding-right:.6em;
@@ -366,20 +398,43 @@ Phones (<768px)
   .description-container { margin-top:0; }
   .section-title { padding-top: 1em; }
   .image-description { padding-right: .5em; padding-left: .5em;}
-  .text-wrapper { top:8em;}
+  .text-wrapper { top:3em;}
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navbar-brand {padding-top:.2em;}
   .image-description {position: static;}
-  .text-wrapper { top:4em; }
+  .text-wrapper { 
+    top:0em; 
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-right: 0;
+  }
+  .container {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .sponsor {
+    max-width: 80%;
+    margin-bottom: 2em;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 2em;
+  }
+  .navbar-nav { margin:0; }
+  .image-description {
+    margin:1em 0;
+    text-align: center;
+  }
+  .navbar-btn.pill-btn {margin-left: 1em; }
 
 }
 
 @media (max-width: 1200px) and (min-width:992px){
   .image-description {margin-top: 30px;}
   .project-container { padding: .5em;}
+
 }
 
 @media (max-width: 992px) and (min-width:768px){

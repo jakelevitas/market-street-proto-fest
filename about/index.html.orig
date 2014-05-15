@@ -20,12 +20,8 @@ This feedback will help the City identify the ideas best suited for long-term in
 <div class="row">
   <section id="festival-map">
     <div class="section-title">Festival Map</div>
-<<<<<<< HEAD
    <div class="col-md-12"> <p class="lead">Over three days, the Festival will span nearly two miles of Market Street, divided into five Zones.</p></div>
-    <div class="col-md-12"><img id="festival-map-img" src="/images/festivalmap.png"></div>
-=======
     <div class="col-md-12"><img id="festival-map-img" src="{{ site.baseurl }}/images/festivalmap.png"></div>
->>>>>>> gh-pages
   </section>
 </div>
 
@@ -33,8 +29,14 @@ This feedback will help the City identify the ideas best suited for long-term in
 <div class="row">
   <section id="timeline">
     <div class="section-title">Timeline</div>
+<<<<<<< HEAD
     <div class="col-md-12 hidden-xs"><img class="timeline" src="{{ site.baseurl }}/images/timeline.png"></div>
     <div class="col-md-12 visible-xs"><img class="timeline" src="{{ site.baseurl }}/images/v-timeline.svg"></div>
+=======
+    <div class="col-md-12"> <p class="lead"></p></div>
+    <div class="col-md-12 hidden-xs"><img class="timeline" src="/images/timeline.png"></div>
+    <div class="col-md-12 visible-xs"><img class="timeline" src="/images/v-timeline.svg"></div>
+>>>>>>> e94908ce6c4e325e9986eb62714fed10e68133ff
   </section>
 </div>
 
