@@ -16,6 +16,8 @@ Box-Shadow: gray;
 /* BASIC STYLE */
 body {color:#666;font-size:16px;}
 h1 {color:#f06798;}
+h3 { padding: 1em 0;}
+h3 { padding: .5em 0;}
 a {color:#4fc6e0;}
 .icon-bar { background-color:white; }
 .container {
@@ -30,10 +32,10 @@ hr {
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 2em;
-  padding-top: 2.5em;
   font-size: 2em;
   font-weight: 500;
   color:#f06798;
+  margin-top: 2em;
 }
 a:hover {
   text-decoration: none;
@@ -64,7 +66,7 @@ a.navbar-brand {padding-right: 1em;}
 }
 .navbar-nav>li>a {
 	font-weight: 100;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   padding-right:.5em;
 	font-size:1em;
 }
@@ -162,16 +164,11 @@ a.navbar-brand {padding-right: 1em;}
 .full-width-image-1 {
   background: #000000 url('images/bg-7.jpg') no-repeat center center;
   background-size: cover;
-  padding: 100px 0;
+  padding: 3em 0;
   margin-bottom: 2.5em;
-  min-height: 25em;
+  min-height: 18em;
   opacity: 1;
 
-}
-.text-wrapper { 
-  position: absolute;  
-  top: 5em;
-  margin-right: 10%;
 }
 .title { 
   color:white;
@@ -443,6 +440,14 @@ footer {
   /*background-color: #f5f5f5;*/
 }
 
+.footer-title {
+  font-size: 1.5em;
+  padding-bottom: 3em;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #999;
+}
+
 
 
 /*
@@ -462,6 +467,7 @@ Phones (<768px)
 @media (max-width: 991px) and (min-width:768px){
   .navbar { padding-top: 1em; }
   .logo { display:none; }  
+  .navbar-header {display: none;}
   .project-container { padding: .5em;}
   .image-description {
     position: static;
@@ -469,9 +475,7 @@ Phones (<768px)
     margin-bottom: 3em;
   }
   .description-container { margin-top:0; }
-  .section-title { padding-top: 1em; }
   .image-description { padding-right: .5em; padding-left: .5em;}
-  .text-wrapper { top:3em;}
   .timeline-rnd { font-size: 1.6em;
     margin-bottom: 0;}
   .timeline-descr {
@@ -489,10 +493,9 @@ Phones (<768px)
   .navbar-brand {padding-top:.2em;}
   .image-description {position: static;}
   .text-wrapper { 
-    top:0em; 
     padding-left: 5%;
     padding-right: 5%;
-    margin-right: 0;
+
   }
   .container {
     padding-left: 4%;
