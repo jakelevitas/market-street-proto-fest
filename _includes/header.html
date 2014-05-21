@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="">
-    <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
+    <link rel='shortcut icon' type='image/x-icon' href='{{ site.baseurl }}/images/favicon.ico' />
 
     <title>{{page.title}}</title>
 
@@ -24,9 +24,10 @@
   </head>
 
   <body>
+    
     <!-- NAVIGATION -->
     <div class="navbar" role="navigation">
-      <div class="container">
+      <div class="container col-lg-10 col-lg-offset-1">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -64,13 +65,16 @@
         </div> <!--/.nav-collapse -->
       </div>
     </div> <!--/.navbar -->
+
+
+
     {% if page.is_front %}
      <!-- FEATURED IMAGE AND INTRO -->
     <div class="title-parent">
       <div class="full-width-image-1">
 
         <div class="container">
-          <div class="text-wrapper row">
+          <div class="text-wrapper row col-lg-10 col-lg-offset-1">
             
             <div class="title col-md-8">
               <h1>The future of MARKET STREET is in YOUR HANDS</h1>
@@ -97,7 +101,7 @@
       <div class="full-width-image-1" style="background: #000000 url('{{ site.baseurl }}/images/{{ page.image }}') no-repeat center center; background-size: cover;">
 
         <div class="container">
-          <div class="text-wrapper row">
+          <div class="text-wrapper row col-lg-10 col-lg-offset-1">
             <div class="title col-md-8">
               <h1>{{ page.lead }}</h1>
             </div>
