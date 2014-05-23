@@ -243,6 +243,7 @@ a.navbar-brand {padding-right: 1em;}
   box-shadow: 0 0 3px gray;
   font-weight: 200;
   padding-top: 1.6em;
+  z-index: 2;
 }
 
 .timeline-label {
@@ -258,6 +259,7 @@ a.navbar-brand {padding-right: 1em;}
   font-weight: normal;
   text-transform: uppercase;
   z-index: -1;
+  margin-top: 3px;
 
 }
 .timeline-ln-parent{
