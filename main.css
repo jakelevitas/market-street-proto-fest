@@ -360,6 +360,94 @@ a.navbar-brand {padding-right: 1em;}
   padding-bottom: 1.5em;
 }
 
+/* ========== TABLES ========== */
+
+table.datetable {
+    border:0px solid #ddd;
+    padding:15px;
+}
+
+table.datetable td {
+    border-bottom:1px solid #ddd;
+    padding:10px;
+}
+
+table.datetable tr:hover {
+    color:#000;
+}
+
+table.sponsortable {
+    border:0px solid #ddd;
+    padding:15px;
+}
+
+table.sponsortable td:hover {
+}
+
+table.sponsortable td {
+    border-bottom:1px solid #ddd;
+    padding:10px;
+    color:#fff;
+    width:12%;
+}
+
+table.sponsortable td.headerrow {
+    color:rgb(102,102,102);
+    font-weight: bold;
+    border-bottom:1px solid #666;
+}
+
+table.sponsortable td.sectionlabel {
+    background-color: #ddd;
+    color:#666;
+    width:100%;
+}
+
+table.sponsortable td.benefit {
+    width:40%;
+    color:#666;
+}
+
+table.sponsortable td.diamond {
+    background-color:hsla(191,70%,30%,1);
+    width:12%;
+    text-align: center;
+    font-size:2em;
+}
+
+table.sponsortable td.platinum {
+    background-color:hsla(191,70%,40%,1);
+    width:12%;
+    text-align: center;
+    font-size:2em;
+}
+
+table.sponsortable td.gold {
+    background-color:hsla(191,70%,50%,1);
+    width:12%;
+    text-align: center;
+    font-size:2em;
+}
+
+table.sponsortable td.silver {
+    background-color:hsla(191,70%,60%,1);
+    width:12%;
+    text-align: center;
+    font-size:2em;
+}
+
+table.sponsortable td.bronze {
+    background-color:hsla(191,70%,70%,1);
+    width:12%;
+    text-align: center;
+    font-size:2em;
+}
+
+/* ========== HR ========== */
+
+hr.tighthr {
+  margin:1em 0em 1em 0em;
+}
 
 /* ========== PROJECT PAGE ========== */
 .proj-header {
